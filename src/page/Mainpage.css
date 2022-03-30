@@ -1,0 +1,12 @@
+.mainimg {
+    position: relative;
+    left: 450px;
+    top: 50px;
+    width: 700px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
