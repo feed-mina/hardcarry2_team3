@@ -3,7 +3,7 @@ import mapimg from "../assets/20220330_120315_2.png";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import Navigation from "../component/Nav/Navigation";
-
+import Navmain from "../component/Nav/Navmain";
 import "./Mainpage.css";
 
 function MainPage() {
@@ -11,7 +11,7 @@ function MainPage() {
     <div>
       <p>mainpage</p>
       {/* <Navigation /> */}
-      <div className="map">
+      <div>
         <img src={mapimg} className="mainimg" usemap="#image-map" />
 
         <map name="image-map">
@@ -56,7 +56,8 @@ function MainPage() {
             shape="circle"
           />
         </map>
-      </div>
+      </div>{" "}
+      <Navmain />
     </div>
   );
 }

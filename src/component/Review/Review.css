@@ -1,0 +1,35 @@
+.mainimg {
+    position: relative;
+    left: 450px;
+    top: 50px;
+    width: 700px;
+}
+
+.map {
+    position: relative;
+    left: 450px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+}
+
+.title1 {
+    width: 300px;
+    height: 400px;
+}
+
+.title2 {
+    width: 300px;
+    height: 100px;
+}
+
+.product {
+    width: 300px;
+    height: 400px;
+}

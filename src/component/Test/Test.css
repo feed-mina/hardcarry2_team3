@@ -1,0 +1,12 @@
+.alttxt {
+    font-size: 5rem;
+}
+
+.map {
+    position: relative;
+    left: 450px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
