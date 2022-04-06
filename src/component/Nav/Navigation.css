@@ -1,0 +1,9 @@
+.Navigation {
+    text-align: left;
+}
+
+.Navigationitem {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
