@@ -1,0 +1,70 @@
+.layout {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.OnTest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar {
+    margin-top: 3rem;
+}
+
+#testQuestionNum {
+    position: absolute;
+    top: 12%;
+    font-family: "GmarketSansBold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #6aa99e;
+}
+
+.testQusetionNum {
+    margin-top: 5rem;
+}
+
+.testQuestionContainer {
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testAnswer {
+    background: #fffef5;
+    border-radius: 32.5px;
+    width: 310px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    display: table;
+    box-sizing: border-box;
+    border: 2px solid #6aa99e;
+    font-size: 15px;
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+}
+
+.testAnswer:active {
+    background: #6aa99e;
+    color: #fffef5;
+    border-radius: 32.5px;
+    border: 2px solid #6aa99e;
+    padding: 0;
+}
+
+.testAnswer:visited {
+    color: #000000;
+}
+
+.footermargin {
+    display: block;
+    height: 3rem;
+    margin-top: 50rem;
+}

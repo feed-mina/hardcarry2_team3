@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import button from "../assets/button1.png";
 import graybox from "../assets/LargeGrayRectangle.png";
 import "../component/Test/TestPage.css";
-
+import { useNavigate } from "react-router-dom";
 const TestPage = () => {
+  const navigate = useNavigate();
+  const handleNext = () => {
+    console.log("성공!");
+    navigate("/ontest");
+  };
   return (
     <div className="layout">
       <div className="test">
@@ -27,7 +32,14 @@ const TestPage = () => {
             <img src={graybox} className="grayimg" alt="altimg" />
           </div>
           <div className="button">
-            <img src={button} className="buttonimg" alt="button" />{" "}
+            <button>
+              <img
+                src={button}
+                className="buttonimg"
+                alt="button"
+                onClick={handleNext}
+              />
+            </button>
           </div>
         </div>{" "}
         {/* <div className="alt">

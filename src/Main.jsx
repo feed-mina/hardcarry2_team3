@@ -4,11 +4,10 @@ import HomePage from "./page/HomePage";
 import NotFoundPage from "./page/NotFoundPage";
 import Mainpage from "./page/Mainpage";
 import Mainpages from "./page/Mainpages";
-import Test from "./page/TestPage";
 import Navmain from "./component/Nav/Navmain";
 import HeaderNav from "./component/Layout/HeaderNav";
 import TestPage from "./page/TestPage";
-
+import OnTest from "./component/Test/OnTest";
 function Main() {
   return (
     <div>
@@ -22,6 +21,7 @@ function Main() {
           <Route path="/story" element={<HomePage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/test" element={<TestPage />} />
+          <Route path="/ontest" element={<OnTest />} />
         </Routes>
         <Navmain />
       </BrowserRouter>
