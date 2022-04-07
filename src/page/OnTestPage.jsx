@@ -1,12 +1,8 @@
 import React from "react";
+import OnTestForm from "../component/Test/OnTestForm";
 
 const OnTestPage = () => {
-  return (
-    <div className="layout">
-      <div className="OnTestPage"></div>
-      OnTestPage
-    </div>
-  );
+  return <OnTestForm />;
 };
 
 export default OnTestPage;

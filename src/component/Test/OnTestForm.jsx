@@ -32,7 +32,7 @@ import ProgressBar from "../Progress/Progress";
 import "./OnTest.css";
 
 var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-const OnTest = (props) => {
+const OnTestForm = (props) => {
   const navigate = useNavigate();
 
   //   const history = useHistory();
@@ -143,4 +143,4 @@ const OnTest = (props) => {
     </div>
   );
 };
-export default OnTest;
+export default OnTestForm;

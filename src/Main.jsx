@@ -3,11 +3,13 @@ import React, { Component, useEffect, useState, useContext } from "react";
 import HomePage from "./page/HomePage";
 import NotFoundPage from "./page/NotFoundPage";
 import Mainpage from "./page/Mainpage";
-import Mainpages from "./page/Mainpages";
 import Navmain from "./component/Nav/Navmain";
 import HeaderNav from "./component/Layout/HeaderNav";
 import TestPage from "./page/TestPage";
-import OnTest from "./component/Test/OnTest";
+import OnTestPage from "./page/OnTestPage";
+import ResultPage from "./page/ResultPage";
+import WaitPage from "./page/WaitPage";
+import ProductVotePage from "./page/ProductVotePage";
 function Main() {
   return (
     <div>
@@ -16,12 +18,17 @@ function Main() {
 
         <Routes>
           <Route path="/" element={<Mainpage />} />
-          <Route path="/products" element={<Mainpages />} />
+
           <Route path="/mains" element={<Mainpage />} />
           <Route path="/story" element={<HomePage />} />
-          <Route path="*" element={<NotFoundPage />} />
+
           <Route path="/test" element={<TestPage />} />
-          <Route path="/ontest" element={<OnTest />} />
+          <Route path="/ontest" element={<OnTestPage />} />
+          <Route path="/result" element={<ResultPage />} />
+          <Route path="/wait" element={<WaitPage />} />
+          <Route path="/products" element={<ProductVotePage />} />
+
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Navmain />
       </BrowserRouter>

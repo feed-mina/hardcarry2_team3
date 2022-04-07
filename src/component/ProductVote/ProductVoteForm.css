@@ -1,0 +1,50 @@
+.layout {
+    width: 400px;
+}
+
+.ProductVoteForm {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.product_title {
+    position: absolute;
+}
+
+.product_titletext {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    color: #00bcb4;
+}
+
+.product_subtitletext {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #00bcb4;
+}
+
+.product_map {
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    margin-top: 2rem;
+}
+
+.product_button {
+    margin-top: 2rem;
+}
+
+.product_share {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
