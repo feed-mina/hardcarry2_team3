@@ -6,21 +6,20 @@ function formatDate(value) {
   return `${date.getFullYear()}. ${date.getMonth() + 1}. ${date.getDate()}`;
 }
 function ReviewListItem({ review, onDelete }) {
-  const handleDeleteClick = () => onDelete(review.id);
+  // const handleDeleteClick = () => onDelete(review.id);
   return (
-    <div>
-      <div className="item-nav">
-        <div>
+    <div className="layout">
+      <div className="writelist">
+        <div className="writelist_item">
           <div>
-            <p>{review.createdAt}</p>
-            <p className="prod_size"> {review.nickname}</p>
-            <p> {review.content}</p>
+            <div className="writelist_namesection">
+              <p className="writelist_name">닉네임 {review.nickname}</p>
+            </div>
+            <p className="writelist_date">{formatDate(review.createdAt)}</p>
+
+            <p className="writelist_content"> {review.content}</p>
           </div>
-
-          <Rating value={review.rating} />
-          <p className="main_prod_gray">{formatDate(review.createdAt)}</p>
-
-          <button onClick={handleDeleteClick}>삭제</button>
+          {/* <button onClick={handleDeleteClick}>삭제</button> */}
         </div>
       </div>
     </div>
@@ -31,15 +30,16 @@ function ReviewList({ reviews, onDelete }) {
   return (
     <div>
       <div>
-        <ul className="second-nav">
+        <ul className="writelist_map">
           {" "}
           {reviews.map((review) => {
             return (
-              <div className="item-nav">
-                <li key={review.id}>
-                  {" "}
-                  {<ReviewListItem review={review} onDelete={onDelete} />}
-                </li>
+              <div className="writelist">
+                <ul>
+                  <li key={review.id}>
+                    {<ReviewListItem review={review} onDelete={onDelete} />}
+                  </li>
+                </ul>
               </div>
             );
           })}{" "}

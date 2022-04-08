@@ -6,10 +6,6 @@ import progress from "../Progress/Progress";
 import "./ProductList.css";
 
 function ProductListItem({ item }) {
-  const [votes, setVotes] = useState(0);
-  const onIncrease = () => {
-    setVotes((prevVotes) => prevVotes + 1);
-  };
   return (
     <div>
       <div className="layout">
@@ -28,19 +24,27 @@ function ProductListItem({ item }) {
     </div>
   );
 }
-var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 const ProductList = ({ onDelete }) => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState();
+  const [checkedItems, setCheckedItems] = useState(new Set());
+  const checkedItemHandler = (id, isChecked) => {
+    if (isChecked) {
+      checkedItems.add(id);
+      setCheckedItems(checkedItems);
+    } else if (!isChecked && checkedItems.has(id)) {
+      checkedItems.delete(id);
+      setCheckedItems(checkedItems);
+    }
+  };
 
-  const [votes, setVotes] = useState(0);
-  const [time, setTime] = useState(false);
-  const [likes, setLikes] = useState(0);
+  const [bChecked, setChecked] = useState(false);
 
-  const onIncrease = () => {
-    setLikes((prevLikes) => prevLikes + 1);
+  const checkHandler = ({ target }) => {
+    setChecked(!bChecked);
+    checkedItemHandler(item.id, target.checked);
   };
 
   useEffect(() => {
@@ -73,14 +77,6 @@ const ProductList = ({ onDelete }) => {
     });
   }, []);
 
-  useEffect(() => {
-    setTime(true);
-  }, [time]);
-  const onButton = (num) => {
-    setTime(false);
-    setVotes(votes + 1);
-    select[votes] = num;
-  };
   if (isLoading) {
     return (
       <section className="ItemsLoading">
@@ -95,12 +91,9 @@ const ProductList = ({ onDelete }) => {
       </section>
     );
   }
+
   return (
     <div className="layout">
-      {/* <div className="productlist">
-        <img className="main_event1" src={graybox} alt="event1" border="0" />
-      </div>
-      <div className="bestitem ">굿즈 투표</div> */}
       <div>
         <ol className="second-nav">
           {items.map((item) => {
@@ -111,25 +104,24 @@ const ProductList = ({ onDelete }) => {
                 <div className="product_checkbox">
                   <input
                     type="checkbox"
+                    checked={bChecked}
+                    onChange={(e) => checkHandler(e)}
+                  />
+                  ;{item.title}
+                  {/* <input
+                    type="checkbox"
                     name={item.id}
                     value={item.id}
                     id={item.title}
-                    onClick={() => {
-                      onButton(0);
-                    }}
-                    // onClick={}
                   />
                   <label for={item.title} id={item.id}>
                     {item.title} 굿즈를 갓 템으로 투표하기
-                  </label>
+                  </label> */}
                 </div>
               </li>
             );
           })}{" "}
         </ol>
-        <div>
-          {/* <progress width={300} percent={select[votes] / votes} /> */}
-        </div>
       </div>
     </div>
   );

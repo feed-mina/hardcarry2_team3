@@ -10,6 +10,10 @@ import OnTestPage from "./page/OnTestPage";
 import ResultPage from "./page/ResultPage";
 import WaitPage from "./page/WaitPage";
 import ProductVotePage from "./page/ProductVotePage";
+import IssueList from "./component/PRACTICE/IssueList";
+import Issue from "./component/PRACTICE/Issue";
+import ProductListSample from "./component/ProductVote/ProductListSample";
+import Review from "./component/Review/Review";
 function Main() {
   return (
     <div>
@@ -21,12 +25,14 @@ function Main() {
 
           <Route path="/mains" element={<Mainpage />} />
           <Route path="/story" element={<HomePage />} />
+          <Route path="/write" element={<Review />} />
 
           <Route path="/test" element={<TestPage />} />
           <Route path="/ontest" element={<OnTestPage />} />
           <Route path="/result" element={<ResultPage />} />
           <Route path="/wait" element={<WaitPage />} />
           <Route path="/products" element={<ProductVotePage />} />
+          <Route path="/productsample" element={<ProductListSample />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

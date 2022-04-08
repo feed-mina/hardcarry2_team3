@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import FileInput from "./FileInput";
 import "./ReviewForm.css";
 import RatingInput from "./RatingInput";
-import createReviews from "../../reviewapi";
+import createReviews from "./api";
+import button from "../../assets/button3.png";
 
 const INITIAL_VALIES = {
   nickname: "",
@@ -39,27 +40,36 @@ function ReviewForm() {
   };
 
   return (
-    <form className="ReviewForm" onSubmit={handleSubmit}>
-      <input
-        name="nickname"
-        value={values.nickname}
-        onChange={handleInputChange}
-      />
-      <RatingInput
-        name="rating"
-        value={values.rating}
-        onChange={handleChange}
-      />
-      <textarea
-        name="content"
-        value={values.content}
-        onChange={handleInputChange}
-      />
-      <button type="submit" disabled={isSubmitting}>
-        확인
-      </button>
-      {submittingError?.message && <div>{submittingError.message}</div>}
-    </form>
+    <div className="layout">
+      <div className="writeform">
+        <form className="Form" onSubmit={handleSubmit}>
+          <input
+            className="write_name"
+            name="nickname"
+            value={values.nickname}
+            onChange={handleInputChange}
+            placeholder="닉네임"
+          />
+
+          <textarea
+            className="write_textarea"
+            name="content"
+            value={values.content}
+            onChange={handleInputChange}
+            placeholder="&#13;&#10;해당 작성 내용은 삭제나 수정이 불가하오니 &#13;&#10;신중하게 작성 부탁드립니다."
+          />
+          <button type="submit" disabled={isSubmitting}>
+            <img
+              src={button}
+              className="submit_button"
+              alt="submit_button"
+              onClick={handleSubmit}
+            />
+          </button>
+          {submittingError?.message && <div>{submittingError.message}</div>}
+        </form>
+      </div>
+    </div>
   );
 }
 

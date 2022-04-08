@@ -1,9 +1,32 @@
-.ReviewForm {
+.writeform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
 }
 
-.ReviewForm> :not(:last-child) {
+.Form> :not(:last-child) {
     margin-bottom: 20px;
+}
+
+.write_name {
+    resize: none;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.write_textarea {
+    resize: none;
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+    align-items: center;
 }

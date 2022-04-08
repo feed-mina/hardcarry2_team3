@@ -128,7 +128,7 @@ const ProductList = ({ onDelete }) => {
           })}{" "}
         </ol>
         <div>
-          {/* <progress width={300} percent={select[votes] / votes} /> */}
+          <progress width={300} percent={select[votes] / votes} />
         </div>
       </div>
     </div>

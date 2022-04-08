@@ -1,15 +1,20 @@
 import React, { Component, useState, useEffect } from "react";
 import graybox from "../../assets/LargeGrayRectangle.png";
-
-import progress from "../Progress/Progress";
-
 import "./ProductList.css";
 
 function ProductListItem({ item }) {
-  const [votes, setVotes] = useState(0);
-  const onIncrease = () => {
-    setVotes((prevVotes) => prevVotes + 1);
-  };
+  // 체크박스 하나만 체크되도록.
+  // const setCheckBoxAsRadio = (targetObj, inObj) => {
+  //   var len = targetObj.length;
+
+  //   if (len > 1) {
+  //     // 객체가 배열이라면. 배열이 아니면 그냥 체크박스로 작동
+  //     for (var i = 0; i < len; i++) {
+  //       if (targetObj[i] != inObj) targetObj[i].checked = false;
+  //     }
+  //   }
+  // };
+
   return (
     <div>
       <div className="layout">
@@ -28,21 +33,14 @@ function ProductListItem({ item }) {
     </div>
   );
 }
-var select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
 const ProductList = ({ onDelete }) => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [httpError, setHttpError] = useState();
-
   const [votes, setVotes] = useState(0);
-  const [time, setTime] = useState(false);
-  const [likes, setLikes] = useState(0);
-
   const onIncrease = () => {
-    setLikes((prevLikes) => prevLikes + 1);
+    setVotes((prevVotes) => prevVotes + 1);
   };
-
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
@@ -73,14 +71,6 @@ const ProductList = ({ onDelete }) => {
     });
   }, []);
 
-  useEffect(() => {
-    setTime(true);
-  }, [time]);
-  const onButton = (num) => {
-    setTime(false);
-    setVotes(votes + 1);
-    select[votes] = num;
-  };
   if (isLoading) {
     return (
       <section className="ItemsLoading">
@@ -114,22 +104,17 @@ const ProductList = ({ onDelete }) => {
                     name={item.id}
                     value={item.id}
                     id={item.title}
-                    onClick={() => {
-                      onButton(0);
-                    }}
-                    // onClick={}
+                    onClick={onIncrease}
                   />
-                  <label for={item.title} id={item.id}>
+                  <label for={item.title}>
                     {item.title} 굿즈를 갓 템으로 투표하기
+                    {votes}명이 투표했습니다.
                   </label>
                 </div>
               </li>
             );
           })}{" "}
         </ol>
-        <div>
-          {/* <progress width={300} percent={select[votes] / votes} /> */}
-        </div>
       </div>
     </div>
   );
