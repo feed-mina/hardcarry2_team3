@@ -110,7 +110,7 @@ const ProductList = ({ onDelete }) => {
 
                 <div className="product_checkbox">
                   <input
-                    type="checkbox"
+                    type="radio"
                     name={item.id}
                     value={item.id}
                     id={item.title}

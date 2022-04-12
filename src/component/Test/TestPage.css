@@ -1,30 +1,39 @@
-.layout {
-    width: 400px;
+.test_layout {
+    width: 500px;
     margin: 0 auto;
 }
 
-.title {
+.test_page {
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+    background: black;
+    /* background: #ffffff; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.maintitle {}
+.test_title {
+    margin-top: 7rem;
+}
 
-.maintext {
+.test_maintitle {}
+
+.test_maintext {
     text-align: center;
     margin-top: 2rem;
     font-style: normal;
     font-weight: bolder;
     font-size: 34px;
     line-height: 46px;
-    color: #00bcb4;
+    color: #ff7eb8;
 }
 
-.subtitle {}
+.test_subtitle {}
 
-.subtext1 {
+.test_subtext1 {
     text-align: center;
     margin-top: 2rem;
     font-style: normal;
@@ -33,7 +42,7 @@
     color: #00bcb4;
 }
 
-.subtext2 {
+.test_subtext2 {
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -41,7 +50,7 @@
     color: #00bcb4;
 }
 
-.explaintext {
+.test_explaintext {
     text-align: center;
     margin-top: 2.5rem;
     font-style: normal;
@@ -49,49 +58,36 @@
     font-size: 17px;
 }
 
-.explaintext1 {
+.test_explaintext1 {
     text-align: center;
     font-style: normal;
     font-weight: lighter;
     font-size: 17px;
 }
 
-.maincontent {
+.test_maincontent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
 
-.grayimg {
+.test_grayimg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 
-.buttonimg {
+.test_buttonimg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 45rem;
+    margin-top: 35rem;
 }
 
-.footermargin {
+.test_footermargin {
     display: block;
     height: 3rem;
     margin-top: 50rem;
 }
-
-
-/* .alttxt {
-    font-size: 5rem;
-}
-
-.map {
-    position: relative;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-} */

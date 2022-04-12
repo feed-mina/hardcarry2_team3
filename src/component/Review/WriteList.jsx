@@ -5,7 +5,7 @@ function formatDate(value) {
   const date = new Date(value);
   return `${date.getFullYear()}. ${date.getMonth() + 1}. ${date.getDate()}`;
 }
-function ReviewListItem({ review, onDelete }) {
+function WriteListItem({ review, onDelete }) {
   // const handleDeleteClick = () => onDelete(review.id);
   return (
     <div className="layout">
@@ -25,7 +25,7 @@ function ReviewListItem({ review, onDelete }) {
     </div>
   );
 }
-function ReviewList({ reviews, onDelete }) {
+function WriteList({ reviews, onDelete }) {
   console.log(reviews);
   return (
     <div>
@@ -37,7 +37,7 @@ function ReviewList({ reviews, onDelete }) {
               <div className="writelist">
                 <ul>
                   <li key={review.id}>
-                    {<ReviewListItem review={review} onDelete={onDelete} />}
+                    {<WriteListItem review={review} onDelete={onDelete} />}
                   </li>
                 </ul>
               </div>
@@ -49,4 +49,4 @@ function ReviewList({ reviews, onDelete }) {
   );
 }
 
-export default ReviewList;
+export default WriteList;

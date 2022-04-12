@@ -1,24 +1,33 @@
 export const MenuItems = [
   {
-    title: "스토리",
+    title: "일당백 프로젝트",
+    url: "/mains",
+    element: "<Mainpage />",
+  },
+  {
+    title: "디노 스토리",
     url: "/story",
     element: "<HomePage />",
   },
-
   {
-    title: "고해성사",
-    url: "/write",
-    element: "<Review />",
+    title: "백수삶의현장",
+    url: "/test",
+    cName: "nav-links",
+    element: "<test/>",
   },
   {
-    title: "굿즈제안투표",
+    title: "백수의일기장",
+    url: "/write",
+    element: "<Write />",
+  },
+  {
+    title: "백런스 게임",
     url: "/products",
     element: "<Mainpage />",
   },
   {
-    title: "백수능력고사",
-    url: "/test",
-    cName: "nav-links",
-    element: "<Home/>",
+    title: "백수도 템빨",
+    url: "/products",
+    element: "<ProductVotePage/>",
   },
 ];

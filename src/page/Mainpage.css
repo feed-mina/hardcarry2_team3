@@ -1,69 +1,75 @@
-/* .layout {
-    width: 400px;
+.Main_layout {
     margin: 0 auto;
+    width: 500px;
+    margin-top: 4rem;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
+.Main_background {
     width: 100%;
-    height: 55px;
-    background-color: #18928c;
-    align-items: center;
-}
-
-.side_effect {
-    display: flexbox;
+    position: relative;
+    background: #18928c;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.sidebutton {
-    border: none;
-    background: url("../assets/side_nav.png") no-repeat;
+.Main_grayboxarray {
+    margin-top: 7rem;
 }
-
-.title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.titletext {
-    font-size: 22px;
-    text-align: center;
-    font-style: normal;
-    color: #f8f9fa;
-} */
 
 .graybox1 {
+    margin-right: 10rem;
+}
+
+.graybox2 {
+    margin-left: 10rem;
+}
+
+.graybox3 {
+    margin-right: 10rem;
+}
+
+.graybox4 {
+    margin-left: 10rem;
+}
+
+.graybox5 {
+    margin-right: 10rem;
+}
+
+.graybox6 {
+    margin-left: 10rem;
+}
+
+
+/* .graybox1 {
     margin-left: 225px;
     margin-top: 1rem;
-    /* margin-top: 234px; */
+
     border-radius: opx;
 }
 
 .graybox2 {
     margin-left: 40px;
     margin-top: 2rem;
-    /* margin-top: 298px; */
+ 
     border-radius: 0px;
 }
 
 .graybox3 {
     margin-left: 225px;
     margin-top: 3rem;
-    /* margin-top: 458px; */
+  
     border-radius: 0px;
 }
 
 .graybox4 {
     margin-left: 40px;
     margin-top: 4rem;
-    /* margin-top: 555px; */
+
     border-radius: 0px;
-}
+} */
 
 .footertext {
     margin-top: 5rem;
@@ -72,7 +78,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
-    color: #18928c;
+    color: #f89cc5;
 }
 
 .footermargin {

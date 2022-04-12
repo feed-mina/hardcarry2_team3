@@ -1,14 +1,15 @@
 .layout {
     width: 400px;
-    margin: 0 auto;
+    top: 0.5rem;
 }
 
 .header {
+    top: 0.5rem;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 55px;
-    background-color: #18928c;
+    height: 2rem;
+    background-color: #f89cc5;
     align-items: center;
 }
 
@@ -19,20 +20,26 @@
     align-items: center;
 }
 
-.sidebutton {
+.titlebutton {
     border: none;
-    background: url("../../assets/side_nav.png") no-repeat;
+    background: url("../../assets/titlebutton.png") no-repeat;
 }
 
 .title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titletext {
-    font-size: 22px;
-    text-align: center;
+    font-size: 1.5em;
+    text-align: start;
     font-style: normal;
     color: #f8f9fa;
+    align-content: center;
+    justify-content: center;
 }

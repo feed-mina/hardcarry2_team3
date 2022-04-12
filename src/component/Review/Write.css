@@ -1,0 +1,103 @@
+.layout {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.write {
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.write_title {
+    display: flex;
+    margin-top: 7rem;
+    line-height: 46px;
+    color: #ff7eb8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.write_maintitle {
+    margin-bottom: 2rem;
+    color: #ff7eb8;
+}
+
+.write_subtitle {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ff7eb8;
+}
+
+.present_text {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.present_subtext {
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.present {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.write_small_graybox {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.write_footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.present_numbertext {
+    margin-top: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.SNS {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.SNS_share {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.SNS_title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ff7eb8;
+}
+
+.writelist_title {
+    font-weight: bolder;
+    text-align: left;
+    color: #ff7eb8;
+    margin-bottom: 2rem;
+}

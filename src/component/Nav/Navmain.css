@@ -1,0 +1,43 @@
+.layout {
+    width: 50rem;
+    margin: 0 auto;
+    font: bolder;
+}
+
+.Navcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    /* background-color: #f89cc5; */
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: salmon;
+}
+
+.lineimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    font: bolder;
+}
