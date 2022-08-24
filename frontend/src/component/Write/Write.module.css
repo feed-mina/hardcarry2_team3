@@ -1,0 +1,515 @@
+.write_layout {
+    padding-top: var(--navbar-height);
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.writelinenoslider {
+    margin-top: 10px;
+}
+
+.writeline {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.writeheader_layout {
+    height: 46px;
+    font-family: CookieRun-Regular;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.writecontent_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: CookieRun-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ff7eb8;
+    background-color: #ffffff;
+}
+
+.diaryscope {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.submitdiaryscope {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.writename,
+.writephone,
+.writenickname {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #495057;
+    font-family: CookieRun-Regular;
+}
+
+.write_nickname {
+    margin-left: 5px;
+    width: 264px;
+    height: 32px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.write_text {
+    margin-top: 10px;
+}
+
+.write_textarea {
+    font-family: "NanumSquareRound";
+    width: 310px;
+    height: 200px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.write_choice {
+    font-family: CookieRun-Regular;
+    margin-top: 20px;
+    margin-right: 170px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.write_choiceradio {
+    margin: 0 auto;
+}
+
+.write_name {
+    margin-left: 23px;
+    padding-left: 16px;
+    width: 264px;
+    height: 32px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 6px;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #adb5bd;
+}
+
+.write_phone {
+    margin-left: 14px;
+    padding-left: 16px;
+    width: 264px;
+    height: 32px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 6px;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #adb5bd;
+}
+
+.write_inform {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: normal;
+    text-align: left;
+    color: #868e96;
+    margin-bottom: 10px;
+}
+
+.write_private {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: CookieRun-Regular;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #495057;
+}
+
+.writesubmitbutton {
+    width: 338px;
+    height: 41px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diary_write {
+    border: none;
+    background: none;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.present_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.present_header {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.present_inform {
+    margin-top: 16px;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #495057;
+}
+
+.presentline {
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentimg_header {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    /* Gray 8 */
+    color: #212529;
+}
+
+.present_informimg {
+    margin-top: 8px;
+    margin-left: 3px;
+    text-align: center;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #212529;
+}
+
+.SNS_layout {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.SNS_header {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+    margin-bottom: 16px;
+}
+
+.snsbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.diary_save {
+    margin-left: 20px;
+    width: 48px;
+}
+
+.writeliststart {
+    width: 390px;
+    height: 1px;
+}
+
+.diarylistline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding-bottom: 42px;
+}
+
+.diarylistheader {
+    margin-left: 16px;
+    font-family: CookieRun-Regular;
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ff7eb8;
+}
+
+.searchoptionstyle {
+    margin-left: 10px;
+    width: 90px;
+    height: 37px;
+    appearance: none;
+    background-color: #ced4da !important;
+    background-repeat: no-repeat;
+    background-position: 50px center;
+    background-image: url(../../assets/more.png);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+    font-family: CookieRun-Regular;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    border-radius: 26px;
+    filter: alpha(opacity=0);
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #495057;
+}
+
+.diary_heart {
+    margin-left: 10px;
+    width: 90px;
+    height: 37px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+    font-family: CookieRun-Regular;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    border-radius: 26px;
+    background: CED4DA;
+}
+
+.diary_new {
+    margin-left: 10px;
+    width: 90px;
+    height: 37px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+    font-family: CookieRun-Regular;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    border-radius: 26px;
+}
+
+.searchpng {
+    width: 24px;
+}
+
+.footer {
+    width: 162px;
+}
+
+.modallayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modaltitle {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #343a40;
+}
+
+.finisheddiary {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #343a40;
+}
+
+.result_sharebox {
+    margin-top: 56px;
+    width: 390px;
+    height: 190px;
+    margin-bottom: 24px;
+}
+
+.inputtext {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 7px;
+    background-color: rgb(84, 223, 75);
+    position: relative;
+    top: 3px;
+    left: 6px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchfuckline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fuckbuttonline {
+    width: 90px;
+    height: 50x;
+}
+
+.fuckbutton {
+    border: 1px solid #ced4da;
+    min-height: 40px;
+    height: 30px;
+    width: 87px;
+    border: none;
+    background: none;
+    list-style: none;
+    background-image: url(../../assets/ffff2.png);
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.searchlayout {
+    margin-top: 16px;
+    /* margin-top: 28px;
+    margin-bottom: 28px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-left: 16px; */
+}
+
+.searchfit {
+    width: 260px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.searchinput {
+    background-image: url(../../assets/search.png);
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    box-sizing: border-box;
+    width: 173px;
+    height: 40px;
+    border: 1px solid #adb5bd;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 40px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* Gray 3 */
+    color: #adb5bd;
+    /* margin-left: 16px;
+    margin-right: 8px; */
+}
+
+.searchoptipn {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 400px;
+    min-width: 300px;
+}

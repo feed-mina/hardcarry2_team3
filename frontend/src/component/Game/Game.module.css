@@ -1,0 +1,100 @@
+.game_layout {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--navbar-height);
+    align-items: center;
+}
+
+.game_title {
+    margin-top: 54px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+}
+
+.game_subtitle {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+}
+
+.game_image {
+    margin-top: 40px;
+    width: 262px;
+    height: 262px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.gamebutton_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 66px;
+    height: 225px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #343a40;
+    font-family: CookieRun-Regular;
+    padding-bottom: 60px;
+}
+
+.game_buttonitem {
+    font-family: CookieRun-Regular;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    border: none;
+    background: #ff7eb8;
+    color: #ffffff;
+    padding: 14px 22px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 358px;
+    height: 88px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+}
+
+.game_buttonitem:hover,
+.game_buttonitem:active {
+    font-family: CookieRun-Regular;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    border: none;
+    background: #ffffff;
+    color: #343a40;
+    padding: 14px 22px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 358px;
+    height: 88px;
+}

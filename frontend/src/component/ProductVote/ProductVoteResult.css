@@ -1,0 +1,44 @@
+.voteresult_layout {
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_titletext {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 34px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.product_subtitletext {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.vote_subtitletext1 {
+    color: #ff7eb8;
+}
+
+.vote_subtitletext2 {
+    color: #ff7eb8;
+}
+
+.votebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,123 @@
+.diarylayout {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 16px;
+}
+
+.diarycontent {
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #343a40;
+}
+
+.writelist_item {
+    font-family: "NanumSquareRound";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 91%;
+    height: 50%;
+    padding: 16px 34px 36px 16px;
+    box-shadow: 0px 0px 6px #ced4da;
+    border-radius: 16px;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    /* Gray 7 */
+    color: #343a40;
+    margin-bottom: 16px;
+}
+
+.heart {
+    /* 본문 1 - 고딕 */
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* Gray 7 */
+    color: #343a40;
+}
+
+.writenickname {
+    padding-top: 16px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #343a40;
+}
+
+.writenicknameline {
+    padding-top: 16px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #343a40;
+}
+
+.heart_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    /* Gray 7 */
+    color: #343a40;
+}
+
+.heart {
+    display: flex;
+    flex-direction: row;
+    width: 24px;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.morelayout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diary_more {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #495057;
+    border: none;
+    background: none;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.moreimg {
+    width: 24px;
+}

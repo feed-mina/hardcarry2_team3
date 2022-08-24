@@ -1,0 +1,194 @@
+.gameresult_layout {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--navbar-height);
+    align-items: center;
+}
+
+.game_title {
+    margin-top: 54px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+}
+
+.game_subtitle {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+}
+
+.gameresult_line {
+    margin-top: 32px;
+    margin-bottom: 46px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: CookieRun-Regular;
+    color: #212529;
+}
+
+.barA,
+.barB {}
+
+.submitgamescope {
+    display: flex;
+    flex-direction: column;
+}
+
+.gamecommentnickname {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #495057;
+    font-family: CookieRun-Regular;
+}
+
+.gamecomment_nickname {
+    margin-left: 5px;
+    width: 308px;
+    height: 40px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.gamecomment_text {
+    margin-top: 10px;
+}
+
+.gamecomment_textarea {
+    font-family: "NanumSquareRound";
+    width: 358px;
+    height: 64px;
+    border: 1px solid #adb5bd;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.gamecommentsubmitbutton {
+    width: 358px;
+    height: 40px;
+    background: none;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    border: 1px solid #ff7eb8;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.submit_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shareSNS {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.SNS_header {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: center;
+    /* Point 1 */
+    color: #ff7eb8;
+    margin-bottom: 16px;
+}
+
+.snsbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game_save {
+    margin-left: 20px;
+    width: 48px;
+}
+
+ 
+
+.footer {
+    width: 162px;
+}
+
+.modallayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modaltitle {
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #343a40;
+}
+
+
+.submit_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamecommentsubmitbutton {
+    border: none;
+    background: none;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ color: #ff7eb8;
+}

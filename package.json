@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "react-gtm-module": "^2.0.11"
+  },
+  "name": "hardcarry2_oneto100-main",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild" : "cd frontend && npm install && npm run build && mv build ../backend",
+    "start" : "cd backend && npm install && npm install express && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

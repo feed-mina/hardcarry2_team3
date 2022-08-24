@@ -1,0 +1,14 @@
+.layout {
+    width: 400px;
+}
+
+.writelist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.writelist_name {
+    font-weight: bold;
+}
