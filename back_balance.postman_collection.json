@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "a9255fc8-d435-4974-916e-21af5977d944",
+		"name": "back_balance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "selectBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.35.152.195/api/balance/selectBalance?balance_type=A",
+					"host": [
+						"3",
+						"35",
+						"152",
+						"195"
+					],
+					"path": [
+						"api",
+						"balance",
+						"selectBalance"
+					],
+					"query": [
+						{
+							"key": "balance_type",
+							"value": "A",
+							"description": "A 또는 B "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balanceResult",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.35.152.195/api/balance/balanceResult",
+					"host": [
+						"3",
+						"35",
+						"152",
+						"195"
+					],
+					"path": [
+						"api",
+						"balance",
+						"balanceResult"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createReply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \"balance_content\": \"당근빠따로 b라고 생각합니다 -,-;;\",\r\n       \"balance_name\": \"b가최고22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "3.35.152.195/api/balance/createReply",
+					"host": [
+						"3",
+						"35",
+						"152",
+						"195"
+					],
+					"path": [
+						"api",
+						"balance",
+						"createReply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "replyLike",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.35.152.195/api/balance/replyLike?balance_id=1",
+					"host": [
+						"3",
+						"35",
+						"152",
+						"195"
+					],
+					"path": [
+						"api",
+						"balance",
+						"replyLike"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "balance_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "3.35.152.195/balance/getReply?page=0&size=4&sort=latest&keyword=",
+					"host": [
+						"3",
+						"35",
+						"152",
+						"195"
+					],
+					"path": [
+						"balance",
+						"getReply"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"description": "페이지는 0부터 시작!"
+						},
+						{
+							"key": "size",
+							"value": "4",
+							"description": "size는 4로 고"
+						},
+						{
+							"key": "sort",
+							"value": "latest",
+							"description": "최신순 = latest, 공감순 = popular"
+						},
+						{
+							"key": "keyword",
+							"value": "",
+							"description": "검색어 없으면 \"\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 500px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .appbar {
+            width: 100%;
+            height: 56px;
+            background-color: aqua;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sidebar {
+            width: 80%;
+            height: 100%;
+            background-color: bisque;
+            position: absolute;
+            right: -80%;
+            transition: all 0.4s;
+        }
+        
+        #sidebar.active {
+            right: 0;
+        }
+        
+        #menu-btn {
+            width: 56px;
+            height: 56px;
+            display: inline-block;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="sidebar"></div>
+        <div class="appbar">
+            <a id="menu-btn" href="#"> </a>
+            <div class="title"></div>
+        </div>
+        <div class="content"></div>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        document.getElementById("menu-btn").addEventListener("click", (event) => {
+            sidebar.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

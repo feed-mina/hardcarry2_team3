@@ -1,0 +1,26 @@
+.btton_Modalmain {
+    border: none;
+    background: none;
+}
+
+.btton_Modalgame {
+    border: 0.1rem solid #ff7eb8;
+    background-color: white;
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #ff7eb8;
+
+}
+
+.btton_Modalgame:hover {
+    background-color: #ff7eb8;
+    color: white;
+}

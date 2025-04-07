@@ -1,0 +1,84 @@
+.wait_layout {
+    padding-top: var(--navbar-height);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.walitline {
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: CookieRun-Regular;
+}
+
+.waitheader1 {
+    font-family: CookieRun-Regular;
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.waitheader2_1 {
+    margin-top: 32px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #ff7eb8;
+}
+
+.waitheader2_2 {
+    margin-top: 0px;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    line-height: 23px;
+    color: #ff7eb8;
+}
+
+.loadingline {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingimg {
+    width: 266px;
+    height: 266px;
+}
+
+.textline {
+    height: 150px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingtext {
+    color: #adb5bd;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.kakaoandclipboard {
+    width: 172px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.diary_kakao {
+    display: flex;
+    flex-direction: row;
+}
+
+.diary_link {
+    display: flex;
+    flex-direction: row;
+}
